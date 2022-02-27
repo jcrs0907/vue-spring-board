@@ -1,7 +1,8 @@
 const { defineConfig } = require("@vue/cli-service");
 module.exports = defineConfig({
   transpileDependencies: true,
-   outputDir: '../main/resources/static', //빌드 타겟 디렉토리
+  //outputDir : npm run build로 빌드 시에 파일이 생성되는 위치
+   outputDir: '../main/resources/static',
    devServer: {
           port: 3000,
           proxy: {
@@ -11,5 +12,5 @@ module.exports = defineConfig({
                   changeOrigin: true //cross origin 허용
               }
           }
-      },
+      }
 });
