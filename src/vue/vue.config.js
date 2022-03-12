@@ -11,6 +11,8 @@ module.exports = defineConfig({
                   ws: true,
                   changeOrigin: true //cross origin 허용
               }
-          }
-      }
+          },
+      },
+      //eslint 설정 끄기
+      lintOnSave: false
 });
