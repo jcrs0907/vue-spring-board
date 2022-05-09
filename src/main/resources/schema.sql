@@ -9,8 +9,7 @@ create table member(
 	member_name VARCHAR(20) NOT NULL,
 	member_password VARCHAR(100) NOT NULL,
 	CRE_DTTM DATETIME NOT NULL,
-	UPT_DTTM DATETIME NULL,
-	USE_YN CHAR(1) NOT NULL DEFAULT 'Y'
+	UPT_DTTM DATETIME NULL
 );
 
 -- -----------------------------------------------------
@@ -23,8 +22,7 @@ create table board(
 	board_content TEXT NOT NULL,
  	board_count DECIMAL(11,0) NOT NULL DEFAULT 0,
  	CRE_DTTM DATETIME NOT NULL,
-	UPT_DTTM DATETIME NULL,
-	USE_YN CHAR(1) NOT NULL DEFAULT 'Y'
+	UPT_DTTM DATETIME NULL
 );
 
 -- -----------------------------------------------------
@@ -36,6 +34,5 @@ create table comment(
 	member_id INT(11) NOT NULL,
 	comment_content VARCHAR(50) NOT NULL,
 	CRE_DTTM DATETIME NOT NULL,
-	UPT_DTTM DATETIME NULL,
-	USE_YN CHAR(1) NOT NULL DEFAULT 'Y'
+	UPT_DTTM DATETIME NULL
 );

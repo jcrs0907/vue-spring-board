@@ -6,8 +6,8 @@ module.exports = defineConfig({
    devServer: {
           port: 3000,
           proxy: {
-              '/api': { //api로 들어오면 포트 8082로 보냄
-                  target: 'http://localhost:8082',
+              '/api': { //api로 들어오면 포트 8080로 보냄
+                  target: 'http://localhost:8080',
                   ws: true,
                   changeOrigin: true //cross origin 허용
               }

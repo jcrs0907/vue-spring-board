@@ -6,9 +6,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/api")
-public class TestController {
-    @GetMapping("/hello")
-    public String hello() {
-        return "hello!";
+public class BoardController {
+
+    @GetMapping("/list")   
+    public String List() {
+        return "list";
     }
 }

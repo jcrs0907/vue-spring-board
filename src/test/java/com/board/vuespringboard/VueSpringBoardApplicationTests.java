@@ -1,7 +1,7 @@
 package com.board.vuespringboard;
 
-import com.board.vuespringboard.domain.Member;
-import com.board.vuespringboard.repository.MemberRepository;
+import com.board.vuespringboard.domain.entity.Member;
+import com.board.vuespringboard.domain.repository.MemberRepository;
 
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;

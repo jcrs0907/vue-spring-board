@@ -1,9 +1,9 @@
-package com.board.vuespringboard.repository;
+package com.board.vuespringboard.domain.repository;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.board.vuespringboard.domain.Member;
+import com.board.vuespringboard.domain.entity.Member;
 
 public interface MemberRepository {
   Member save(Member member);
